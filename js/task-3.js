@@ -1,4 +1,6 @@
 class StringBuilder {
+  #value;
+
   constructor(initialValue) {
     this.#value = initialValue;
   }
@@ -18,8 +20,6 @@ class StringBuilder {
   padBoth(str) {
     this.#value = str + this.#value + str;
   }
-
-  #value;
 }
 
 const builder = new StringBuilder('.');
